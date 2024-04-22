@@ -1,0 +1,177 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Ensuring full page height */
+html,
+body {
+  height: 100%;
+  background-color: #F5F5F5;
+}
+
+.nav_title {
+  padding-left: 20px;
+  font-size: larger;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav_title:hover {
+  padding-left: 20px;
+  font-size: larger;
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styling the navigation bar */
+header {
+  background-color: #74776B;
+  height: 10%;
+  /* Taking 10% of the viewport height */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  /* Align items vertically center */
+  justify-content: space-between;
+  font-family: 'Inter';
+  color: #fff;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: right;
+  padding-right: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 15px;
+  /* Adjusting margin between items */
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+  /* Removing margin for the first item */
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Styling main content */
+main {
+  margin-top: 10%;
+  /* Ensuring content doesn't get hidden behind nav bar */
+}
+
+.homepage_img {
+  column-count: 3;
+
+}
+
+/*About me styling*/
+
+.about {
+  font-family: 'Inter';
+  color: #000;
+}
+
+.about h1 {
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.about p {
+  padding-left: 20px;
+}
+
+/*Portfolio styling*/
+
+.portfolio {
+  font-family: 'Inter';
+  color: #000;
+}
+
+.portfolio h1 {
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.portfolio .sort_projects {
+  width: 40%;
+  height: 40px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #74776B;
+}
+
+.portfolio .sort_projects button {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+  color: #FFF;
+}
+
+.portfolio .sort_projects ul {
+  list-style-type: none;
+  text-align: left;
+  color: #FFF;
+}
+
+.portfolio .sort_projects ul li {
+  display: inline;
+  margin-left: 15px;
+}
+
+/*Hobbies styling*/
+
+.hobbies {
+  font-family: 'Inter';
+  color: #000;
+}
+
+.hobbies h1 {
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+/*Resume styling*/
+
+.resume {
+  font-family: 'Inter';
+  color: #000;
+}
+
+.resume h1 {
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.resume img {
+  padding-left: 20px;
+}
+
+/*Contact me styling*/
+
+.contact {
+  font-family: 'Inter';
+  color: #000;
+}
+
+.contact h1 {
+  font-weight: 300;
+  padding-left: 20px;
+}

@@ -26,9 +26,23 @@
   </header>
 
   <main>
-    <div class="homepage_img">
+    <div class="portfolio">
+      <h1>Portfolio</h1>
+      <div class="sort_projects">
+        <ul>
+          <li><button onclick="filterSelection('all')">All</button></li>
+          <li><button onclick="filterSelection('cv')">Computer Vision</button></li>
+          <li><button onclick="filterSelection('se')">Software Engineering</button></li>
+          <li><button onclick="filterSelection('ee')">Electrical Engineering</button></li>
+        </ul>
+      </div>
+      <div class="projects">
+        <a href="portfolio/cv.html" class="cv show">
 
-      <img src="assets/home_2.PNG" alt="image 1" height="1000px">
+        </a>
+        <div class="se show"></div>
+        <div class="ee show"></div>
+      </div>
     </div>
   </main>
 </body>
