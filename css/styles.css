@@ -74,10 +74,30 @@ main {
   /* Ensuring content doesn't get hidden behind nav bar */
 }
 
-.homepage_img {
-  column-count: 3;
+
+/*Home page styling*/
+
+.homepage {
+  font-family: 'Inter';
+  color: #000;
 
 }
+
+.homepage .typing-text {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.homepage .typing-text {
+  animation: typing 3s steps(20, end) infinite;
+}
+
 
 /*About me styling*/
 
@@ -125,6 +145,15 @@ main {
   color: #FFF;
 }
 
+.portfolio .sort_projects button:hover {
+  border: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size: medium;
+  color: #000;
+}
+
 .portfolio .sort_projects ul {
   list-style-type: none;
   text-align: left;
@@ -135,6 +164,54 @@ main {
   display: inline;
   margin-left: 15px;
 }
+
+.portfolio .container {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.portfolio .image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.portfolio .opaque-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  /* initially opaque */
+  transition: opacity 0.3s ease-in-out;
+  /* smooth transition */
+}
+
+.portfolio .image-container:hover .opaque-image {
+  opacity: 0.5;
+  /* make image more visible on hover */
+}
+
+.portfolio .image-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  /* semi-transparent white background for better readability */
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.portfolio .item {
+  display: block;
+}
+
+.portfolio .hide {
+  display: none;
+}
+
 
 /*Hobbies styling*/
 
@@ -174,4 +251,36 @@ main {
 .contact h1 {
   font-weight: 300;
   padding-left: 20px;
+}
+
+/*Project Pages styling*/
+.project-page {
+  font-family: 'Inter';
+  color: #000;
+}
+
+.project-page h1 {
+  font-weight: 300;
+  padding-left: 20px;
+}
+
+.project-page p {
+  padding-left: 20px;
+}
+
+.project-page .back-button {
+  margin-left: 20px;
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 50px;
+  /* Adjust width to desired size */
+  height: 25px;
+  /* Ensure height matches width to create a square button */
+  background-color: #74776B;
+}
+
+.project-page a {
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
 }

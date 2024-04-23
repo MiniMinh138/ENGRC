@@ -30,21 +30,39 @@
       <h1>Portfolio</h1>
       <div class="sort_projects">
         <ul>
-          <li><button onclick="filterSelection('all')">All</button></li>
-          <li><button onclick="filterSelection('cv')">Computer Vision</button></li>
-          <li><button onclick="filterSelection('se')">Software Engineering</button></li>
-          <li><button onclick="filterSelection('ee')">Electrical Engineering</button></li>
+          <li><button onclick="filter('all')">All</button></li>
+          <li><button onclick="filter('cv')">Computer Vision</button></li>
+          <li><button onclick="filter('se')">Software Engineering</button></li>
+          <li><button onclick="filter('ee')">Electrical Engineering</button></li>
         </ul>
       </div>
       <div class="projects">
-        <a href="portfolio/cv.html" class="cv show">
-
-        </a>
-        <div class="se show"></div>
-        <div class="ee show"></div>
+        <div class="container">
+          <a href="projects/cv.html" class="item cv se">
+            <div class="image-container">
+              <img src="assets/cv.png" class="opaque-image">
+              <div class="image-title">DIFT Functional Correspondence</div>
+            </div>
+          </a>
+        </div>
+        <div class="container">
+          <a href="projects/rover.html" class="item ee"">
+            <div class=" image-container">
+            <img src="assets/rover.png" class="opaque-image">
+            <div class="image-title">Mars Rover Servo Board</div>
+          </a>
+        </div>
+        <div class="container">
+          <a href="projects/c1.html" class="item se"">
+            <div class=" image-container">
+            <img src="assets/c1.png" class="opaque-image">
+            <div class="image-title">Capital One Virtual Card</div>
+          </a>
+        </div>
       </div>
     </div>
   </main>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
