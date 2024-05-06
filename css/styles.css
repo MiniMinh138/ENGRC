@@ -26,6 +26,18 @@ body {
 }
 
 /* Styling the navigation bar */
+/* header {
+  background-color: #74776B;
+  height: 10%;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Inter';
+  color: #fff;
+} */
 header {
   background-color: #74776B;
   height: 10%;
@@ -39,6 +51,8 @@ header {
   justify-content: space-between;
   font-family: 'Inter';
   color: #fff;
+  z-index: 999;
+  /* Ensure header is above other content */
 }
 
 nav ul {
@@ -83,19 +97,10 @@ main {
 
 }
 
-.homepage .typing-text {
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-.homepage .typing-text {
-  animation: typing 3s steps(20, end) infinite;
+.homepage img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
@@ -111,8 +116,87 @@ main {
   padding-left: 20px;
 }
 
+.about img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about p {
   padding-left: 20px;
+}
+
+.about .timeline {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* Position for line */
+}
+
+.about .timeline-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .timeline-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.about .timeline-item-right {
+  margin-bottom: 40px;
+  /* Increased margin for spacing */
+  /* overflow: hidden; */
+  /* Ensure items clear floated images */
+  float: right;
+  width: 100%;
+  height: 50%;
+}
+
+.about .timeline-item-right img {
+  width: 50%;
+  /* Quarter of the screen */
+  border-radius: 5px;
+  /* Square image */
+  margin-right: 20px;
+  float: right;
+}
+
+.about .timeline-item-right p {
+  float: right;
+  margin-top: 0;
+}
+
+.about .timeline-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.about .timeline-item-left {
+  margin-bottom: 40px;
+  /* Increased margin for spacing */
+  /* overflow: hidden; */
+  /* Ensure items clear floated images */
+  float: left;
+  width: 100%;
+  height: 50%;
+}
+
+.about .timeline-item-left img {
+  width: 50%;
+  /* Quarter of the screen */
+  border-radius: 5px;
+  /* Square image */
+  margin-right: 20px;
+  float: left;
+}
+
+.about .timeline-item-left p {
+  float: left;
+  margin-top: 0;
 }
 
 /*Portfolio styling*/
@@ -225,6 +309,79 @@ main {
   padding-left: 20px;
 }
 
+.hobbies .timeline {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
+  /* Position for line */
+}
+
+.hobbies .timeline-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies .timeline-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.hobbies .timeline-item-right {
+  margin-bottom: 40px;
+  /* Increased margin for spacing */
+  /* overflow: hidden; */
+  /* Ensure items clear floated images */
+  float: right;
+  width: 100%;
+  height: 50%;
+}
+
+.hobbies .timeline-item-right img {
+  width: 50%;
+  /* Quarter of the screen */
+  border-radius: 5px;
+  /* Square image */
+  margin-right: 20px;
+  float: right;
+}
+
+.hobbies .timeline-item-right p {
+  float: right;
+  margin-top: 0;
+}
+
+.hobbies .timeline-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.hobbies .timeline-item-left {
+  margin-bottom: 40px;
+  /* Increased margin for spacing */
+  /* overflow: hidden; */
+  /* Ensure items clear floated images */
+  float: left;
+  width: 100%;
+  height: 50%;
+}
+
+.hobbies .timeline-item-left img {
+  width: 50%;
+  /* Quarter of the screen */
+  border-radius: 5px;
+  /* Square image */
+  margin-right: 20px;
+  float: left;
+}
+
+.hobbies .timeline-item-left p {
+  float: left;
+  margin-top: 0;
+}
+
 /*Resume styling*/
 
 .resume {
@@ -238,18 +395,6 @@ main {
 }
 
 .resume img {
-  padding-left: 20px;
-}
-
-/*Contact me styling*/
-
-.contact {
-  font-family: 'Inter';
-  color: #000;
-}
-
-.contact h1 {
-  font-weight: 300;
   padding-left: 20px;
 }
 
