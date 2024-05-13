@@ -28,7 +28,6 @@
     <div class="project-page">
       <a class="back-button" href="../portfolio.html">Back</a>
       <h1>DIFT</h1>
-      <img>
       <p>The goal of this research project is to determine if DIffusion FeaTures (DIFT) can be used to extract
         functional correspondences between objects in an image. </p>
       <p>DIFT is a new methodology of extracting semantic correspondence between a pair of images using implicit
@@ -38,6 +37,7 @@
         two objects of different categories, but can be used for the same task or purpose. An example of this is the
         handle on a pan and the handle on a basket or the opening of a shoe and the opening of a water bottle (if the
         task is pouring something).</p>
+      <img src="../assets/ref_features.png">
       <p>My task in this research project is to complete a preliminary assessment of the feasibility of DIFT aiding in
         finding functional correspondences.</p>
       <p>DIFT uses the Stable Diffusion model to extract correspondences between pairs (or more) of images. The Stable
@@ -54,6 +54,7 @@
       <p>After formatting the images, we ran a quick test on a pair of images to see how the correspondences compared to
         the true points. We found that with and without the prompt of the task, the correspondences were generally
         incorrect. That being said, the prompt did change the location of the correspondences.</p>
+      <img src="../assets/green.png">
       <p>To better gauge how DIFT is performing, we use a metric to determine if DIFT found a correct correspondence,
         and then we run DIFT on the entire dataset, once with no prompt and once with the task prompt. The metric we use
         is if the found correspondence is within 23 pixels of the true correspondence, then it is a hit, otherwise it is

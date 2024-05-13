@@ -340,7 +340,7 @@ main {
 }
 
 .hobbies .timeline-item-right img {
-  width: 50%;
+  width: 40%;
   /* Quarter of the screen */
   border-radius: 5px;
   /* Square image */
@@ -369,7 +369,7 @@ main {
 }
 
 .hobbies .timeline-item-left img {
-  width: 50%;
+  width: 40%;
   /* Quarter of the screen */
   border-radius: 5px;
   /* Square image */
@@ -428,4 +428,10 @@ main {
   color: #fff;
   text-decoration: none;
   text-align: center;
+}
+
+.project-page img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
